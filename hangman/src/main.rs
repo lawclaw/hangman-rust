@@ -19,6 +19,7 @@ fn main() {
     } 
 }
 
+//Main game
 fn hangman(word: &str) -> bool{
     
     let word_vec: Vec<char> = word.chars().collect();
@@ -121,11 +122,14 @@ fn hangman(word: &str) -> bool{
 
 }
 
+
+//Clear console
 fn clear_console() {
     print!("\x1B[2J\x1B[1;1H");
     io::stdout().flush().unwrap();
 }
 
+//Guessing
 fn char_input() -> char {
     
     loop {
@@ -147,13 +151,8 @@ fn char_input() -> char {
         } 
     }
 }
-/*
-fn print_spaces(max_spaces: i32) {
-    for x in 0..max_spaces + 1{
-        print!("_ ");
-    }
-} */
 
+//Menu
 fn menu() -> bool {
     let mut option: bool = false;
     loop {
