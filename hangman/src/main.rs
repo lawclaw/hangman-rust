@@ -1,4 +1,4 @@
-use std::{io::{self, Write}, thread::current};
+use std::{io::{self, Write}};
 
 fn main() {
     let word: &str = "dolphin";
@@ -27,15 +27,17 @@ fn hangman(word: &str) -> bool{
 
     let mut guess_vec: Vec<char> = Vec::new();
     let mut view_vec:Vec<char> = Vec::new();
-    for x in 0..word_len - 1 {
-        guess_vec.push('_');
+    for _x in 0..word_len  {
         view_vec.push('_');
+    }
+
+    for _x in 0..6 {
+        guess_vec.push('_');
     }
 
     let mut correct_guesses_vec: Vec<char> = Vec::new();
     let mut correct_guesses = 0;
     let mut lives: u8 = 6;
-    let mut found: bool = false;
 
     //Fixed printing by using flush
     while lives >= 1 {
@@ -123,10 +125,11 @@ fn hangman(word: &str) -> bool{
 }
 
 
-//Clear console
+//Clear console 
+//Bug: Shows up as weird characters in CMD (Windows 10)
+//StackOverflow: https://stackoverflow.com/a/66911945
 fn clear_console() {
-    print!("\x1B[2J\x1B[1;1H");
-    io::stdout().flush().unwrap();
+    print!("{esc}c", esc = 27 as char);    
 }
 
 //Guessing
@@ -154,7 +157,7 @@ fn char_input() -> char {
 
 //Menu
 fn menu() -> bool {
-    let mut option: bool = false;
+    let option;
     loop {
         println!("Hangman");
         println!("-------");

@@ -1,1 +1,1 @@
-C:\Users\tu10\Documents\School\Personal\Rust\hangman\target\debug\hangman.exe: C:\Users\tu10\Documents\School\Personal\Rust\hangman\src\main.rs
+C:\Users\tu10\Documents\GitHub\hangman-rust\hangman\target\debug\hangman.exe: C:\Users\tu10\Documents\GitHub\hangman-rust\hangman\src\main.rs
