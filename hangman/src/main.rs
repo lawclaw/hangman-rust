@@ -125,7 +125,7 @@ fn hangman(word: &str) -> bool{
 }
 
 
-//Clear console 
+//Clear console, works in Bash
 //Bug: Shows up as weird characters in CMD (Windows 10)
 //StackOverflow: https://stackoverflow.com/a/66911945
 fn clear_console() {
