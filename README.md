@@ -23,7 +23,7 @@ For the most part it made it less tedious to type but in other cases I became co
 As for overall program architecture I tried to split most of the key methods:
 - main(): console/main window
 - hangman(): "game engine"
-- clear_console(): clears the console (thank you StackOverflow)
+- clear_console(): clears the console (thank you StackOverflow) - does not properly work in Windows CMD
 - char_input: checks the input for guesses
 - menu(): game menu
 
@@ -33,7 +33,8 @@ Other features that I struggled with was the very strict but informative error a
 (Also it really annoyed me that I had to flush the printf() similar to C...)
 
 ## Improvements and conclusion
-This has been my small project in Rust. 
+This has been my small project in Rust.  
+The only bug is that clear_console() doesn't function properly in CMD (Win 10)  
 It has been a challenge and there are many things left for me to learn like:
 - The borrowing and ownership system
 - Referencing (more in-depth)
