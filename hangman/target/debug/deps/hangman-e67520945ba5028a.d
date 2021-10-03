@@ -1,5 +1,0 @@
-c:\Users\tu10\Documents\GitHub\hangman-rust\hangman\target\debug\deps\hangman-e67520945ba5028a.rmeta: src\main.rs
-
-c:\Users\tu10\Documents\GitHub\hangman-rust\hangman\target\debug\deps\hangman-e67520945ba5028a.d: src\main.rs
-
-src\main.rs:
