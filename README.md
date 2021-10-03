@@ -41,4 +41,10 @@ It has been a challenge and there are many things left for me to learn like:
 - How functional programming can be done
 As for improvements to this project would be:
 - OOP approach 
-- Potential GUI 
+- Potential GUI
+
+## Edit 1: Added a file reading function and list of words.  
+The game can now be played until the player chooses to end.   
+After each game is finished the player will be brought back to the menu where they can choose to play again or quit.  
+I have added a noun list which picks a random word every game using rand::Rng.  
+The .txt file was found on [this site](http://www.desiquintans.com/nounlist).  
