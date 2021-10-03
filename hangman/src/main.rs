@@ -1,21 +1,33 @@
 use std::{io::{self, Write}};
+use std::fs;
+use rand::Rng;
 
 fn main() {
-    let word: &str = "dolphin";
-    let menu_choice: bool = menu();
-    
+    let mut menu_choice: bool = menu();
+
     clear_console();
 
     while menu_choice
     {
-        let result =  hangman(word);        
+        let word: &str = &read_file();
+        let result =  hangman(word);    
+        println!();    
+
         if result {
             println!("You won!");
-            break;
         } else {
             println!("You lost!");
-            break;
+            println!("The word was: {}", word);
         }
+
+        let mut input =String::new();
+        io::stdin().read_line(&mut input)
+            .ok()
+            .expect("Can't read input");
+            
+        clear_console();
+        
+        menu_choice = menu();
     } 
 }
 
@@ -180,4 +192,18 @@ fn menu() -> bool {
     }
     return option;
 
+}
+
+//Read one line from a txt
+fn read_file() -> String{
+    let contents = fs::read_to_string("../nounlist.txt")
+        .expect("Can't read file");
+
+    //println!("{}", contents);
+    let split = contents.split('\n');
+    let vec: Vec<&str> = split.collect();
+
+    let mut rng = rand::thread_rng();
+    let word = vec.get(rng.gen_range(1..6803)).unwrap();
+    return word.to_owned().to_owned();
 }
