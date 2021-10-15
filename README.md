@@ -2,7 +2,7 @@
 A very scuffed attempt at making the Hangman game in as a command-line application in Rust
 
 ## Background
-Following my first year at university I learned the foundations of C and C++, I got introduced to Rust.   
+Following my first year at university, after I learned the foundations of C and C++, I got introduced to Rust.   
 I knew bits and pieces of pointer arithmetic, referencing/dereferencing along with memory management.  
 Rust for me was sold as memory safe language and I wanted to try learning a new language on my own.  
 (Also the fact that it was a very beloved language on StackOverflow)  
