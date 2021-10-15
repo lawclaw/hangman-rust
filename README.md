@@ -34,7 +34,7 @@ Other features that I struggled with was the very strict but informative error a
 
 ## Improvements and conclusion
 This has been my small project in Rust.  
-The only bug is that clear_console() doesn't function properly in CMD (Win 10)  
+The only bug from my quick testing, is that clear_console() doesn't function properly in CMD (Win 10)  
 It has been a challenge and there are many things left for me to learn like:
 - The borrowing and ownership system
 - Referencing (more in-depth)
