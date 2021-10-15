@@ -16,7 +16,7 @@ Rust in my opinion was like a mixture of multiple languages and it was interesti
 ## Process
 > *Syntactically the most different from any other language I have coded in*
 
-My experiences so far has been in mainly statically typed languages, the syntax has been the most different and difficult to learn.  
+My experiences so far has been in mainly statically typed languages, so the syntax has been the most different and difficult to learn.  
 Most of the time I don't have to specify the datatype for my variables which was something that had been engrained in me.   
 For the most part it made it less tedious to type but in other cases I became confused when trying to implement capabilities like comparison/equality capability.  
 
