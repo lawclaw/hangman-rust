@@ -40,7 +40,7 @@ It has been a challenge and there are many things left for me to learn like:
 - Referencing (more in-depth)
 - How functional programming can be done
 As for improvements to this project would be:
-- OOP approach 
+- OOP in Rust
 - Potential GUI
 
 ## Edit 1: Added a file reading function and list of words.  
