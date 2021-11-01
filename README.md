@@ -39,6 +39,7 @@ It has been a challenge and there are many things left for me to learn like:
 - The borrowing and ownership system
 - Referencing (more in-depth)
 - How functional programming can be done  
+
 As for improvements to this project would be:
 - OOP in Rust
 - Potential GUI
